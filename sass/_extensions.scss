@@ -1,0 +1,10 @@
+/**
+  EXTENSIONS
+ */
+
+%absolute_center{
+  @include flex-display();
+  @include flex_align( center );
+  @include flex_justify( center );
+
+}

@@ -1,0 +1,43 @@
+/**
+  MIXINS functions
+ */
+
+@mixin flex_justify( $l ){
+  webkit-box-pack: $l;
+  -moz-box-pack: $l;
+  -ms-flex-pack: $l;
+  -webkit-justify-content: $l;
+  justify-content: $l;
+}
+@mixin flex_align( $l ){
+  -webkit-box-align: $l;
+  -moz-box-align: $l;
+  -ms-flex-align: $l;
+  -webkit-align-items: $l;
+  align-items: $l;
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin general-box-shadow(){
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@mixin flex-display(){
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+
+@mixin internal-content(){
+  max-width: $max_width_screen;
+  margin-left:auto;
+  margin-right:auto;
+}
