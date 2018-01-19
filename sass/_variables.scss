@@ -2,3 +2,21 @@
   VARIABLES
  */
 
+$screen_max_width         :         1200px;
+$screen_min_width         :         320px;
+$url_background_image     :         '../img/bg.png';
+$global_font              :         'Roboto';
+$media_query_main_selector:         'screen';
+
+// Screen breaks
+$break_step               :         150;
+$break_normal             :         ($screen_max_width  -   $break_step   );
+$break_one                :         ($break_normal      -   $break_step   );
+$break_two                :         ($break_one         -   $break_step   );
+$break_three              :         ($break_two         -   $break_step   );
+$break_four               :         ($break_three       -   $break_step   );
+
+$break_media_one          :         $media_query_main_selector + " and (max-width : "   +   $break_one    +   ")";
+$break_media_two          :         $media_query_main_selector + " and (max-width : "   +   $break_two    +   ")";
+$break_media_three        :         $media_query_main_selector + " and (max-width : "   +   $break_three  +   ")";
+$break_media_four         :         $media_query_main_selector + " and (max-width : "   +   $break_four   +   ")";
